@@ -35,12 +35,13 @@ function PickSide() {
         );
     }
     return (
-        <>{!startGame ?
+        <>
+        <h3 style={{backgroundColor:"white",padding:'5px',borderRadius:'100px'}}>Choose side</h3>
             <div style={{ height: '100px', width: '100px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start', marginTop: '50%' }}>
-                <h3>Choose side</h3>
+
                 <Square value='X' onClick={onClickHandleX}></Square>
                 <Square value='O' onClick={onClickHandleO}></Square>
-            </div> : game}
+            </div>
         </>
     );
 }
