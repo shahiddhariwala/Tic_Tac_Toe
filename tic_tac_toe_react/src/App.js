@@ -1,11 +1,11 @@
 import React from 'react';
-import Board from "./container/Board";
+import Game from "./container/Game";
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <Board style={{textAlign:"center"}}/>
+      <Game />
     </div>
   );
 }
